@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cam.swipedismiss.widget.SwipeItem xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/swipe_item_height">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_test"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/ic_head"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_test"
+                android:layout_marginLeft="20dp"
+                android:text="@string/today"
+                android:textSize="20sp"
+                android:gravity="center_vertical"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="80dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/black"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/swipe_item_height">
+
+        <ImageView
+            android:id="@+id/iv_left1"
+            android:layout_width="@dimen/swipe_item_height"
+            android:layout_height="@dimen/swipe_item_height"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_1"/>
+
+        <ImageView
+            android:id="@+id/iv_left2"
+            android:layout_width="@dimen/swipe_item_height"
+            android:layout_height="@dimen/swipe_item_height"
+            android:layout_toLeftOf="@+id/iv_left1"
+            android:src="@mipmap/ic_2"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/swipe_item_height">
+
+        <ImageView
+            android:id="@+id/iv_right1"
+            android:layout_width="@dimen/swipe_item_height"
+            android:layout_height="@dimen/swipe_item_height"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/ic_3"/>
+
+        <ImageView
+            android:id="@+id/iv_right2"
+            android:layout_width="@dimen/swipe_item_height"
+            android:layout_height="@dimen/swipe_item_height"
+            android:layout_toRightOf="@+id/iv_right1"
+            android:src="@mipmap/ic_4"/>
+    </RelativeLayout>
+</com.cam.swipedismiss.widget.SwipeItem>
